@@ -9,8 +9,8 @@ export default Component.extend({
 
   tick: task(function*() {
     for (;;) {
-      this.notifyPropertyChange('now');
       yield timeout(1000);
+      this.notifyPropertyChange('now');
     }
   }).on('init'),
 
