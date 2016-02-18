@@ -14,9 +14,5 @@ export default Component.extend({
 
     this.set('isLoading', false);
     this.set('count', open_issues_count);
-  }).on('init'),
-
-  cancel() {
-    this.get('loadCount').cancelAll();
-  }
+  }).on('init')
 });
